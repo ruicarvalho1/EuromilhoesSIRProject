@@ -2,7 +2,9 @@ const http = require("http");
 const express = require('express')
 const app = express();
 const host = 'localhost';
-const port = 8000;
+const port = process.env.PORT || 4000;
+
+
 const cors = require('cors');
 app.use(cors());
 
