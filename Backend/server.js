@@ -4,6 +4,7 @@ const app = express();
 const host = 'localhost';
 const port = process.env.PORT || 18012;
 
+app.use(express.static('Frontend'));
 
 const cors = require('cors');
 app.use(cors());
