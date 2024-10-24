@@ -97,7 +97,7 @@ function genNewBet() {
 }
 
 
-const url = 'http://localhost:3000/key';
+const url = 'https://euromilhoessirproject.onrender.com/key';
 
 
 async function fetchData() {
