@@ -2,7 +2,7 @@ const http = require("http");
 const express = require('express')
 const app = express();
 const host = 'localhost';
-const port = process.env.PORT || 18012;
+const port = process.env.PORT || 3000;
 
 app.use(express.static('Frontend'));
 
@@ -32,6 +32,6 @@ app.get('/key', (req, res) => {
 });
 
 
-app.listen(port, host, () => {
+app.listen(port,() => {
     console.log(`Server is running on http://${host}:${port}/key`);
 });
