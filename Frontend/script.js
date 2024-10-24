@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
 });
 
 
-
+/*
 function genRandomNumbers(n, min, max) {
     // return an array with n unique integers between min and max
     let setOfNumbers = new Set();
@@ -28,12 +28,16 @@ function genRandomNumbers(n, min, max) {
     return [...setOfNumbers].sort((a,b) => a-b);
 }
 
+*/
+
 
 
 function genJSONBet() {
 
+    /*
     let numbers = genRandomNumbers(5, 1, 50);
     let stars = genRandomNumbers(2, 1, 12);
+*/
 
     let newBet = {
         timeStamp: new Date(),
@@ -93,7 +97,7 @@ function genNewBet() {
 }
 
 
-const url = 'http://localhost:8000/key';
+const url = 'http://localhost:3000/key';
 
 
 async function fetchData() {
