@@ -3,11 +3,11 @@ const express = require('express')
 const app = express();
 const host = 'localhost';
 const port = process.env.PORT || 3000;
-
+app.use(cors({ origin: 'http://localhost:3000' }));
 app.use(express.static('Frontend'));
 
 const cors = require('cors');
-app.use(cors());
+
 
 
 function genRandomNumbers(n, min, max) {
